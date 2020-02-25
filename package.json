@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "React Blog",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Cyberatlas",
+  "homepage": "https://cyberatlas.github.io/ReactBlog",
   "dependencies": {
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.41",
@@ -37,7 +38,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy" : "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
